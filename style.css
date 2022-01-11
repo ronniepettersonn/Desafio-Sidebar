@@ -1,0 +1,191 @@
+:root {
+    --body-bg-color: #dce4e3;
+    --green: #18c29c;
+    --light-green: #8ed7c6;
+    --light-grey: #dce4e3;
+    --text-color: #084236;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+}
+
+h1 {
+    color: var(--text-color);
+}
+
+aside {
+    background: var(--green);
+    height: 100vh;
+    flex-basis: 250px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard {
+    background: var(--light-grey);
+    flex: 1;
+
+    padding: 18px;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 24px;
+    line-height: 0;
+}
+
+.button-menu {
+    background: transparent;
+    border: none;
+
+    min-height: 27px;
+
+    cursor: pointer;
+}
+
+.content-aside {
+    display: flex;
+    flex-direction: column;
+    padding: 0 24px;
+
+    gap: 1rem;
+}
+
+.content-aside input {
+    background: var(--light-green);
+    border: none;
+
+    font-size: 15px;
+
+    max-width: 222px;
+    padding: 1.1rem .8rem 1.1rem 3rem;
+
+    border-radius: 12px;
+}
+
+nav {
+    flex: 1;
+    padding: .7rem;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+    gap: 2rem;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+
+    line-height: 0;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search svg {
+    position: absolute;
+    left: 35px;
+}
+
+footer {
+    background: var(--light-green);
+    margin-top: auto;
+
+    padding: 8px 16px;
+
+    min-height: 60px;
+
+    display: flex;
+    gap: .4rem;
+}
+
+footer span {
+    font-size: 15px;
+}
+
+footer p {
+    font-size: 12px;
+}
+
+.info-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    flex: 1
+}
+
+.info-profile {
+    display: flex;
+    flex-direction: column;
+    line-height: 0;
+
+    gap: 1rem;
+}
+
+.short-aside {
+    flex-basis: 95px;
+    transition: all .5s;
+}
+
+.short-menu {
+    opacity: 0;
+    transition: all .5s;
+    display: none;
+}
+
+.short-logo {
+    display: none;
+}
+
+.short-header {
+    justify-content: center;
+}
+
+.short-search {
+    display: none;
+    transition: all .5s;
+}
+
+.short-button-search {
+    background: var(--light-grey);
+    padding: 24px;
+    border-radius: 12px;
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 54.2px;
+    
+}
+
+.short-footer {
+    display: none;
+
+}
+
+.short-info-footer {
+    justify-content: center;
+
+}
